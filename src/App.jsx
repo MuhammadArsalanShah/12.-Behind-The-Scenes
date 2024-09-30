@@ -11,13 +11,13 @@ function App() {
   const [chosenCount, setChosenCount] = useState(0);
 
   function handleSetCount(newCount) {
-    const stateReturn = setChosenCount(prevCount => {
-      console.log("Previous count inside: ", prevCount)
+    const stateReturn = setChosenCount((prevCount) => {
+      console.log("Previous count inside: ", prevCount);
       console.log("New count inside: ", newCount);
       return newCount;
     });
-    console.log("The chosen count is:",chosenCount);
-    console.log("State Return",stateReturn);
+    console.log("The chosen count is:", chosenCount);
+    console.log("State Return", stateReturn);
   }
 
   return (
